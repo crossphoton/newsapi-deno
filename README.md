@@ -30,7 +30,9 @@ Start calling the constructor with your API Key as a parameter
 
 ### Top Headlines
 
-`newsApi.topHeadlines({ Query Object })`
+`newsApi.topHeadlines({ Query Object })
+.then(res => ...)
+.catch(err => ...)`
 
 Object below describes the parameters that can be passed for *top-headlines* with equivalent meaning w.r.t. [NewsAPI.org documentation](https://newsapi.org/docs).
 
@@ -46,7 +48,9 @@ const topHeadlinesPoints = {
 
 ### Everything
 
-`newsApi.everything({ Query Object })`
+`newsApi.everything({ Query Object })
+.then(res => ...)
+.catch(err => ...)`
 
 Object below describes the parameters that can be passed for *everything* with equivalent meaning w.r.t. [NewsAPI.org documentation](https://newsapi.org/docs).
 
@@ -66,7 +70,9 @@ const everythingPoints = {
 
 ### Sources
 
-`newsApi.sources({ Query Object })`
+`newsApi.sources({ Query Object })
+.then(res => ...)
+.catch(err => ...)`
 
 Object below describes the parameters that can be passed for *sources* with equivalent meaning w.r.t. [NewsAPI.org documentation](https://newsapi.org/docs).
 
