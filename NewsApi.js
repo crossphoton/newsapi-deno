@@ -85,7 +85,6 @@ class HTTPError extends Error {}
  */
 const getData = async (initialQuery, API_KEY) => {
     let requestString = initialQuery + `&apiKey=${API_KEY}`
-    console.log(requestString)
     let result = await fetch(requestString)
     if(!result.ok){
         console.log("From error checker in function")
